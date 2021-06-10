@@ -31,3 +31,9 @@ The tests can be executed as<br />
 
 C:/>cd AutomationPractice<br />
 C:/CypressTest>npm run testscenario && npm run report<br />
+
+##Progress and Next Steps
+Share the BDD based Test case document in Slack
+Have spent time in getting the Framework and reports in place with few Tests automation. My 8 hrs allocation was complete
+
+Next steps would be to get the rest of the P1 Test Automation. 
