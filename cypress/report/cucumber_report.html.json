@@ -1,0 +1,360 @@
+[
+  {
+    "description": "  User Signs In",
+    "keyword": "Feature",
+    "name": "Login in Automation Practice",
+    "line": 2,
+    "id": "login-in-automation-practice",
+    "tags": [
+      {
+        "name": "@feature-Signin",
+        "line": 1
+      }
+    ],
+    "uri": "SC01_SignIn.feature",
+    "elements": [
+      {
+        "id": "login-in-automation-practice;login-with-valid-username-and-password",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid username and password",
+        "tags": [
+          {
+            "name": "@feature-Signin",
+            "line": 1
+          },
+          {
+            "name": "@TC007",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "On Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 7127000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user click on Sign in",
+            "result": {
+              "status": "passed",
+              "duration": 4994000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user lands on Signin Page",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user enters \"valid\" username",
+            "result": {
+              "status": "passed",
+              "duration": 535000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enters \"valid\" password",
+            "result": {
+              "status": "passed",
+              "duration": 480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user clicks the SignIn button",
+            "result": {
+              "status": "passed",
+              "duration": 3116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user lands on Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user clicks the Logout button",
+            "result": {
+              "status": "passed",
+              "duration": 3652000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-in-automation-practice;login-with-valid-username-and-wrong-password",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Login with valid username and wrong password",
+        "tags": [
+          {
+            "name": "@feature-Signin",
+            "line": 1
+          },
+          {
+            "name": "@TC008",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "On Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 2671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user click on Sign in",
+            "result": {
+              "status": "passed",
+              "duration": 2054000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user lands on Signin Page",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user enters \"valid\" username",
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user enters \"invalid\" password",
+            "result": {
+              "status": "passed",
+              "duration": 443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user clicks the SignIn button",
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user encounters Authentiation error",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-in-automation-practice;login-with-invalid-username-and-password",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Login with invalid username and password",
+        "tags": [
+          {
+            "name": "@feature-Signin",
+            "line": 1
+          },
+          {
+            "name": "@TC009",
+            "line": 26
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "On Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 4064000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "user click on Sign in",
+            "result": {
+              "status": "passed",
+              "duration": 2656000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "user lands on Signin Page",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "user enters \"invalid\" username",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "user enters \"invalid\" password",
+            "result": {
+              "status": "passed",
+              "duration": 429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "user clicks the SignIn button",
+            "result": {
+              "status": "passed",
+              "duration": 1734000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "user encounters Authentiation error",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "  User Seached for Clothing items",
+    "keyword": "Feature",
+    "name": "Search for Clothing",
+    "line": 2,
+    "id": "search-for-clothing",
+    "tags": [
+      {
+        "name": "@feature-Search",
+        "line": 1
+      }
+    ],
+    "uri": "SC02_searchClothing.feature",
+    "elements": [
+      {
+        "id": "search-for-clothing;search-for-exiting-clothing-item",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search for exiting clothing item",
+        "tags": [
+          {
+            "name": "@feature-Search",
+            "line": 1
+          },
+          {
+            "name": "@TC011",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "On Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 3567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user searches for products",
+            "result": {
+              "status": "passed",
+              "duration": 5843000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user lands on Search Result Page",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

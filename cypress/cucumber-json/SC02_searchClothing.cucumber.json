@@ -1,0 +1,67 @@
+[
+  {
+    "description": "  User Seached for Clothing items",
+    "keyword": "Feature",
+    "name": "Search for Clothing",
+    "line": 2,
+    "id": "search-for-clothing",
+    "tags": [
+      {
+        "name": "@feature-Search",
+        "line": 1
+      }
+    ],
+    "uri": "SC02_searchClothing.feature",
+    "elements": [
+      {
+        "id": "search-for-clothing;search-for-exiting-clothing-item",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search for exiting clothing item",
+        "tags": [
+          {
+            "name": "@feature-Search",
+            "line": 1
+          },
+          {
+            "name": "@TC011",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "On Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 3567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user searches for products",
+            "result": {
+              "status": "passed",
+              "duration": 5843000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user lands on Search Result Page",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
