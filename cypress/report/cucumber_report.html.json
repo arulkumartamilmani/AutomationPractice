@@ -1,31 +1,31 @@
 [
   {
-    "description": "  User Signs In",
+    "description": "  User Creates An Account",
     "keyword": "Feature",
-    "name": "Login in Automation Practice",
+    "name": "Account Creation",
     "line": 2,
-    "id": "login-in-automation-practice",
+    "id": "account-creation",
     "tags": [
       {
-        "name": "@feature-Signin",
+        "name": "@feature-AccountCreation",
         "line": 1
       }
     ],
-    "uri": "SC01_SignIn.feature",
+    "uri": "SC00_AccountCreation.feature",
     "elements": [
       {
-        "id": "login-in-automation-practice;login-with-valid-username-and-password",
+        "id": "account-creation;create-account-page-with-valid-format-of-mandatory-fields-only",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Login with valid username and password",
+        "line": 13,
+        "name": "Create account page with valid format of mandatory fields only",
         "tags": [
           {
-            "name": "@feature-Signin",
+            "name": "@feature-AccountCreation",
             "line": 1
           },
           {
-            "name": "@TC007",
-            "line": 5
+            "name": "@TC002",
+            "line": 12
           }
         ],
         "type": "scenario",
@@ -33,324 +33,48 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "On Home Page",
+            "line": 15,
+            "name": "On SignIn Page",
             "result": {
-              "status": "passed",
-              "duration": 7127000000
+              "status": "failed",
+              "duration": 869000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://automationpractice.com/index.php?controller=authentication\n\nThe response we received from your web server was:\n\n  > 508: Loop Detected\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\ngo/</<@http://localhost:53437/__cypress/runner/cypress_runner.js:138889:25\nvisitFailedByErr@http://localhost:53437/__cypress/runner/cypress_runner.js:138264:12\ngo/<@http://localhost:53437/__cypress/runner/cypress_runner.js:138869:29\ntryCatcher@http://localhost:53437/__cypress/runner/cypress_runner.js:10798:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://localhost:53437/__cypress/runner/cypress_runner.js:8733:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://localhost:53437/__cypress/runner/cypress_runner.js:8790:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://localhost:53437/__cypress/runner/cypress_runner.js:8835:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://localhost:53437/__cypress/runner/cypress_runner.js:8911:18\n_drainQueueStep@http://localhost:53437/__cypress/runner/cypress_runner.js:5505:12\n_drainQueue@http://localhost:53437/__cypress/runner/cypress_runner.js:5498:24\n../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://localhost:53437/__cypress/runner/cypress_runner.js:5514:16\nAsync/this.drainQueues@http://localhost:53437/__cypress/runner/cypress_runner.js:5384:14\nFrom Your Spec Code:\n    visitSignInPage/<@http://localhost:53437/__cypress/tests?p=cypress\\integration\\SC00_AccountCreation.feature:256:10\n    getRet@http://localhost:53437/__cypress/runner/cypress_runner.js:136160:20\n    tryCatcher@http://localhost:53437/__cypress/runner/cypress_runner.js:10798:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@http://localhost:53437/__cypress/runner/cypress_runner.js:8072:29\n    thenFn@http://localhost:53437/__cypress/runner/cypress_runner.js:136178:20\n    then@http://localhost:53437/__cypress/runner/cypress_runner.js:136617:21\n    wrapByType/<@http://localhost:53437/__cypress/runner/cypress_runner.js:151591:21\n    runCommand/<@http://localhost:53437/__cypress/runner/cypress_runner.js:150999:15\n    tryCatcher@http://localhost:53437/__cypress/runner/cypress_runner.js:10798:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://localhost:53437/__cypress/runner/cypress_runner.js:8733:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://localhost:53437/__cypress/runner/cypress_runner.js:8790:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@http://localhost:53437/__cypress/runner/cypress_runner.js:8827:10\n    _drainQueueStep@http://localhost:53437/__cypress/runner/cypress_runner.js:5509:12\n    _drainQueue@http://localhost:53437/__cypress/runner/cypress_runner.js:5498:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://localhost:53437/__cypress/runner/cypress_runner.js:5514:16\n    Async/this.drainQueues@http://localhost:53437/__cypress/runner/cypress_runner.js:5384:14\n"
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "user click on Sign in",
+            "keyword": "And ",
+            "line": 16,
+            "name": "user enters \"validandunregistered\" email id",
             "result": {
-              "status": "passed",
-              "duration": 4994000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "user clicks the CreateAccount button",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "user lands on Signin Page",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "user enters \"valid\" username",
-            "result": {
-              "status": "passed",
-              "duration": 535000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "user enters \"valid\" password",
-            "result": {
-              "status": "passed",
-              "duration": 480000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "user clicks the SignIn button",
-            "result": {
-              "status": "passed",
-              "duration": 3116000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "user lands on Account Page",
-            "result": {
-              "status": "passed",
-              "duration": 61000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "user clicks the Logout button",
-            "result": {
-              "status": "passed",
-              "duration": 3652000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "login-in-automation-practice;login-with-valid-username-and-wrong-password",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Login with valid username and wrong password",
-        "tags": [
-          {
-            "name": "@feature-Signin",
-            "line": 1
-          },
-          {
-            "name": "@TC008",
-            "line": 16
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
             "line": 18,
-            "name": "On Home Page",
+            "name": "user lands on Account Creation Page",
             "result": {
-              "status": "passed",
-              "duration": 2671000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
-            "name": "user click on Sign in",
-            "result": {
-              "status": "passed",
-              "duration": 2054000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 20,
-            "name": "user lands on Signin Page",
+            "name": "user fills in all mandatory fields only with valid format",
             "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "user enters \"valid\" username",
-            "result": {
-              "status": "passed",
-              "duration": 524000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "user enters \"invalid\" password",
-            "result": {
-              "status": "passed",
-              "duration": 443000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "user clicks the SignIn button",
-            "result": {
-              "status": "passed",
-              "duration": 3019000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "user encounters Authentiation error",
-            "result": {
-              "status": "passed",
-              "duration": 32000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "login-in-automation-practice;login-with-invalid-username-and-password",
-        "keyword": "Scenario",
-        "line": 27,
-        "name": "Login with invalid username and password",
-        "tags": [
-          {
-            "name": "@feature-Signin",
-            "line": 1
-          },
-          {
-            "name": "@TC009",
-            "line": 26
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "On Home Page",
-            "result": {
-              "status": "passed",
-              "duration": 4064000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 29,
-            "name": "user click on Sign in",
-            "result": {
-              "status": "passed",
-              "duration": 2656000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "user lands on Signin Page",
-            "result": {
-              "status": "passed",
-              "duration": 15000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "user enters \"invalid\" username",
-            "result": {
-              "status": "passed",
-              "duration": 621000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "user enters \"invalid\" password",
-            "result": {
-              "status": "passed",
-              "duration": 429000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "user clicks the SignIn button",
-            "result": {
-              "status": "passed",
-              "duration": 1734000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "user encounters Authentiation error",
-            "result": {
-              "status": "passed",
-              "duration": 33000000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  User Seached for Clothing items",
-    "keyword": "Feature",
-    "name": "Search for Clothing",
-    "line": 2,
-    "id": "search-for-clothing",
-    "tags": [
-      {
-        "name": "@feature-Search",
-        "line": 1
-      }
-    ],
-    "uri": "SC02_searchClothing.feature",
-    "elements": [
-      {
-        "id": "search-for-clothing;search-for-exiting-clothing-item",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Search for exiting clothing item",
-        "tags": [
-          {
-            "name": "@feature-Search",
-            "line": 1
-          },
-          {
-            "name": "@TC011",
-            "line": 5
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "On Home Page",
-            "result": {
-              "status": "passed",
-              "duration": 3567000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "user searches for products",
-            "result": {
-              "status": "passed",
-              "duration": 5843000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "user lands on Search Result Page",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           }
         ]

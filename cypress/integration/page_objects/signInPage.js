@@ -7,10 +7,28 @@ const inputEmail = '#email'
 const inputPassword = '#passwd'
 const buttonSubmit = '#SubmitLogin'
 const txtAuthError = 'Authentication failed.'
-//const accountName = '//span[contains(@class,\'account\')]'
+const inputEmailCreate = '#email_create'
+const buttonSubmitCreate = '#SubmitCreate'
+const notifycreateaccount = "ol > li"
+const txtNotifyRegistered = 'An account using this email address has already been registered. Please enter a valid password or request a new one.'
+
+var chance = require('chance').Chance();
 
 export const signInPage = {
 // Actions
+
+  visitSignInPage(){
+    // loading prod config
+    cy.fixture(environ).then((data)=>{
+      cy.visit(data.signInPageurl);})
+  },
+
+  enterCreateAcctEmail(email) {
+    cy.get(inputEmailCreate)
+      .clear()
+      .type(email)
+  },  
+
   enterEmail(email) {
     cy.get(inputEmail)
       .clear()
@@ -29,7 +47,6 @@ export const signInPage = {
   },
   
   typeusername(args){
-    var txtEmail=""; 
     switch(args){
       case "valid":
         cy.fixture('autdata').then((data)=>{
@@ -43,7 +60,6 @@ export const signInPage = {
   },
 
   typepassword(args){
-    var txtPassword="";
     switch(args){
       case "valid":
         cy.fixture('autdata').then((data)=>{
@@ -56,6 +72,24 @@ export const signInPage = {
     }
   },
 
+  typeemail(args){
+    switch(args){
+      case "validandunregistered":
+        this.enterCreateAcctEmail(chance.email({domain:'theorem.com'}));
+      break;
+      case "validandregistered":
+        cy.fixture('autdata').then((data)=>{
+          this.enterCreateAcctEmail(data.email);})
+      break;
+    }
+  },  
+  
+  clickCreateAccount() {
+    cy.get(buttonSubmitCreate)
+      .first().click()
+  },
+
+  
   // Assertions
   verifyAccountNameDisplayed() {
     cy.fixture('autdata').then((data) => {
@@ -72,6 +106,12 @@ export const signInPage = {
   verifyAuthError(){
     cy.contains(txtAuthError)
        .invoke('show').should('be.visible');
+  },
+
+  verifyNotificationRegistered(){
+    cy.get(notifycreateaccount)
+       .invoke('text')
+       .should('contain',txtNotifyRegistered);
   }
  
 }

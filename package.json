@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "cucumber-html-reporter": "^5.4.0",
-    "cypress": "^4.12.1",
+    "cypress": "^7.5.0",
     "cypress-cucumber-preprocessor": "^2.5.5",
-    "cypress-xpath": "^1.6.0"
+    "cypress-xpath": "^1.6.2"
   }
 }

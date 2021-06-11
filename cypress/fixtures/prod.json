@@ -2,5 +2,6 @@
     "homePageurl" : "http://automationpractice.com/index.php",
     "signInPageurl":"http://automationpractice.com/index.php?controller=authentication",
     "accountPageurl":"http://automationpractice.com/index.php?controller=my-account",
-    "cartPageUrl":"http://automationpractice.com/index.php?controller=order"
+    "cartPageUrl":"http://automationpractice.com/index.php?controller=order",
+    "accountCreationurl":"http://automationpractice.com/index.php?controller=authentication#account-creation"
 }

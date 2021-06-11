@@ -1,9 +1,6 @@
 {
-    "ignoreTestFiles": "*.js",
-    "testFiles": "**/*.{feature,features}"
-    
-  
-    
-  }
+  "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.{feature,features}",
 
-  
+  "experimentalstudio":"true"
+}
